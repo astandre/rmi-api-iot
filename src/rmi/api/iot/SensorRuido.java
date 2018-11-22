@@ -5,12 +5,13 @@
  */
 package rmi.api.iot;
 
+import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 /**
  *
  * @author andre
  */
-public interface SensorRuido {
+public interface SensorRuido extends Remote{
     Double obtenerRuido() throws RemoteException;
 }

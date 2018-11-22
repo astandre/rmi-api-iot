@@ -5,12 +5,13 @@
  */
 package rmi.api.iot;
 
+import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 /**
  *
  * @author andre
  */
-public interface Buzzer {
+public interface Buzzer extends Remote {
     void beep() throws RemoteException;
 }

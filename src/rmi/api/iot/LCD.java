@@ -5,12 +5,13 @@
  */
 package rmi.api.iot;
 
+import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 /**
  *
  * @author andre
  */
-public interface LCD {
+public interface LCD  extends Remote{
     void mostrarMensaje(String Mensaje) throws RemoteException;
 }
